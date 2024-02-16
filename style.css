@@ -3,17 +3,22 @@
     padding: 0;
     font-family: 'Arial';
     box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
 }
 
 body{
-    background-image: linear-gradient(to left top, rgb(123, 184, 18), rgb(8, 80, 19));
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.4) 5%, rgba(255, 255, 255, 0) 50%),
+            radial-gradient(ellipse at 20% 10%, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0) 60%),
+            radial-gradient(ellipse at 90% 80%, rgba(255, 255, 255, 0.2) 5%, rgba(255, 255, 255, 0) 70%),
+            linear-gradient(to bottom, #0c0c0c 0%, #000033 80%, #000033 100%);
     background-attachment: fixed;
 }
 
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #d03ae0, #d5c919);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 90%),
+            linear-gradient(90deg, #d03ae0, #d5c919);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
